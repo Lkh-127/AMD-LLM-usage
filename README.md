@@ -1,5 +1,3 @@
-# AMD-LLM-usage
-Guide to develop the LLM environment for your AMD GPU 
 新手必看！AMD显卡本地运行 DeepSeek-R1 全流程指南（超详细！）
 哈喽大家好！我是九九吐，今天带来一篇超级实用的教程，手把手教你如何在 AMD 显卡上本地运行 DeepSeek-R1！
 
@@ -63,69 +61,3 @@ https://github.com/ByronLeeeee/Ollama-For-AMD-Installer
 
 💬 如果本教程对你有帮助，欢迎点赞 + 关注！
 📢 我是九九吐，祝大家玩得开心，我们下期再见！ 🚀
-
-Must see for newbies! Full guide to running DeepSeek-R1 locally on AMD graphics cards (super detailed!)
-Hello everyone! I'm 九九吐, and today I'm bringing you a super useful tutorial to show you how to run DeepSeek-R1 locally on your AMD graphics card!
-
-If you've been looking for a way to get LLM running smoothly on your AMD graphics card, this tutorial is definitely for you! 💡
-
-Step 1: Environment Preparation (Alpha Ring)
-1️⃣ Download Ollama for AMD 
-https://github.com/likelovewant/ollama-for-amd
-👉 Visit Ollama for AMD
-👉 Go to the Releases page
-👉 Find the .exe file and download it
-
-2️⃣ Download the runtime libraries (ROCmLibs)
-https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU/releases/tag/v0.6.1.2
-👉 Open ROCmLibs for AMD 
-👉 Download the shader version for your AMD graphics card
-📌 Tip: Not sure of your card's shader codename? Check out TechPowerUp!
-
-Step 2: Installation and Configuration
-1️⃣ Install Ollama
-✅ Run the ollama.exe you just downloaded to complete the installation.
-
-2️⃣ Configure ROCm runtime library
-✅ Unzip the .rar file downloaded by ROCmLibs
-✅ Example: rocm.gfx1031.for.hip.sdk.6.1.2.7z (for 6750 GRE)
-
-🔹 Copy the rocblas.dll file:
-📂 Path: C:\Users\your username\AppData\Local\Programs\Ollama\lib\ollama
-
-🔹 Delete the original library folder and replace it with the extracted library folder.
-
-📌 This completes the adaptation of Ollama to AMD graphics cards!
-
-Step 3: Run DeepSeek-R1 🚀
-👉 Visit the Ollama website and find your favorite model!
-👉 Run the command in CMD , e.g.:
-ollama run deepseek-r1
-
-✅ If the dialog is successful, everything is OK!
-✅ Shortcut: Ctrl + D to exit the dialog, ollama ps to see the current run (CPU or GPU)
-
-📌 If Ollama is still running on CPU
-🔹 Workaround: download AMD-adapted version of Ollama for CPU
-🔹 Link: AMD Ollama CPU Installer 
-https://github.com/ByronLeeeee/Ollama-For-AMD-Installer
-Run the exe and try it.
-
-Step 4: Web UI operation (more convenient!)
-📌 Recommend using Page Assist (A W extension)
-✅ Open the gear ⚙️ in the upper right corner to set the language.
-✅ Go to RAG Settings, select the Ollama model and save it.
-✅ Enjoy a smooth web interaction experience!
-
-Summarize & Resources 🔗
-🎯 At this point, you have successfully run DeepSeek-R1 locally on an AMD graphics card!
-🎯 No more relying on expensive NVIDIA cards, AMD users can play with big models too!
-
-🔹 Github Resources
-👉 DeepSeek-R1 Official https://github.com/deepseek-ai/DeepSeek-R1
-👉 Detailed performance paper on DeepSeek-R1
-
-💬 Feel free to like + follow if this tutorial helped you!
-📢 I'm 九九吐, have fun and we'll see you in the next installment! 🚀
-
-
